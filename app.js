@@ -8,16 +8,16 @@ var serverURL= "https://api.funtranslations.com/translate/minion.json"
  function urlTranslate(text){
     return serverURL + "?" +"text="+text;
  }
- function errorHandler(){
+ function errorHandler(error){
 console.log("error occured", error);
 }
 function clickEventHandler(){
     
     inputText=txtInput.value;
     fetch(urlTranslate(inputText))
-    .then(response => response(json))
+    .then(response => response.json())
     .then(json => { var translatedText=json.contents.translated;
-                   outoutDiv.innerText=translatedText;
+                   outputDiv.innerText=translatedText;
     })
     .catch(errorHandler)
 
