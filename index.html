@@ -7,22 +7,68 @@
 <style>
     #output{
         border: 1px solid black;
-        padding: 1rem;
-        width: 80%;
-        margin:1rem;
-        padding: 1rem;
+        padding: 2rem;
+        width: 35%;
+        margin:auto;
+        display: block;
+    }
+    .minion{
+        padding: 1rem 1rem;
+    color:#7c3aed;
+    font-size: xx-large;
+        margin-left: 30%;
+        margin-right: 30%;
+    text-align: center;
+    height: 4rem;
+    background-color: yellow;
+   
+    border-bottom-left-radius: 1rem;
+    }
+    #txt-input{
+        border: 1px solid black;
+        padding: 2rem;
+        width: 35%;
+        margin:auto;
+        display: block;
+    }
+    #btn-translate{
+        padding: 1rem 1rem;
+        margin:auto;
+        display:block;
+        border-radius: 1rem;
+        background-color: yellow;
+        font-weight:bold ;
+    }
+    .display-line{
+        padding: 1rem 1rem;
+        font-size: larger;
+        text-align: center;
+    }
+    .footer{
+        padding: 1rem 1rem;
+    color:#7c3aed;
+        margin-left: 30%;
+        margin-right: 30%;
+        margin: 2rem 30%;
+    text-align: center;
+        font-weight: bold;
+    background-color: yellow;
     }
 </style>
 </head>
 <body>
-    <h1>Talk Banana</h1>
+    <h1 class="minion">Talk Minion</h1>
     <textarea id="txt-input" placeholder="type here something"></textarea>
-    <button id="btn-translate">Translate</button>
+    <br>
+    <button id="btn-translate">Translate To Minion </button>
     
-    <div style="font-size: large;">Output will display below</div>
+    <div class="display-line">Output will display below</div>
     <div id="output"></div>
     
     <script src="app.js" type="text/Javascript"></script>
+<footer>
+<div class="footer">Do you love Minions? Let's convert your text to Minion language </div>    
 
+</footer>
 </body>
 </html>
